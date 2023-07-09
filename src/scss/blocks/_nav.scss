@@ -1,0 +1,17 @@
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+    &__link {
+        display: inline-block;
+        padding: 15px 44px;
+        color: var(--text-color);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+}

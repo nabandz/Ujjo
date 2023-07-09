@@ -1,3 +1,11 @@
+@import "settings";
 @import "variables";
 @import "mixins";
 @import "vendor";
+@import "fonts";
+
+@import "blocks/border-block";
+@import "blocks/button";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/logo";
