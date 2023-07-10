@@ -1,0 +1,234 @@
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1180px;
+    }
+    .button {
+        padding: 15px 25px;
+    }
+    .products {
+        &__top {
+            &::before,
+            &::after {
+                height: 117px;
+            }
+        }
+        &__item {
+            width: calc(33% - 14px);
+        }
+    }
+    .card {
+        min-height: 547px;
+        padding-top: 0;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+    .nav {
+        &__link {
+            padding: 15px 16px;
+        }
+    }
+    .logo {
+        padding: 0;
+    }
+    .products {
+        &__decorative {
+            top: 10px;
+            svg {
+                width: 40px;
+                &:nth-child(2) {
+                    transform: translateX(-11px);
+                }
+                &:nth-child(3) {
+                    transform: translateX(11px);
+                }
+            }
+        }
+        &__top {
+            &::before,
+            &::after {
+                height: 95px;
+            }
+        }
+        &__list {
+            column-gap: 25px;
+        }
+    }
+    .card {
+        padding-top: 80px;
+        min-height: auto;
+    }
+    .story {
+        &__title {
+            margin-bottom: 0;
+        }
+        &__content {
+            padding: 94px 0; 
+        }
+    }
+    .banner {
+        &__image {
+            margin-top: -120px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .header {
+        &__block {
+            padding: 22px 15px;
+        }
+    }
+    .nav {
+        &__list {
+            column-gap: 17px;
+        }
+        &__link {
+            padding: 15px 0;
+        }
+    }
+    .button {
+        padding: 10px 15px;
+    }
+    .logo {
+        padding: 0;
+    }
+    .promo {
+        &__block {
+            flex-direction: column;
+            border-bottom: none;
+        }
+        &__ujjo {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__left {
+            width: 100%;
+            border-right: none;
+        }
+        &__right {
+            width: 100%;
+        }
+        &__image {
+            border-bottom: 1px solid var(--dark-color);
+        }
+    }
+    .products {
+        &__decorative {
+            display: none;
+        }
+        &__title {
+            width: 100%;
+        }
+        &__top {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+        &__list {
+            gap: 25px;
+        }
+        &__item {
+            width: calc(50% - 13px);
+        }
+    }
+    .card {
+        min-height: 100%;
+    }
+    .story {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__left {
+            width: 100%;
+            border-right: none;
+            border-bottom: 1px solid var(--dark-color);
+        }
+        &__right {
+            width: 100%;
+        }
+        &__content {
+            padding: 142px 0;
+        }
+    }
+    .banner {
+        &__image {
+            margin-top: -100px;
+        }
+    }
+    .footer {
+        &__content {
+            padding: 20px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        &__block {
+            flex-direction: column;
+        }
+    }
+    .nav {
+        &__list {
+            flex-direction: column;
+        }
+    }
+    .button {
+        padding: 10px 30px;
+    }
+    .banner {
+        &__image {
+            margin-top: -70px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .promo {
+        &__title {
+            padding: 20px;
+            font-size: 45px;
+        }
+    }
+    .products {
+        &__top {
+            padding: 40px 20px;
+        }
+        &__title {
+            font-size: 40px;
+        }
+        &__item {
+            width: 100%;
+        }
+    }
+    .story {
+        &__title {
+            padding: 20px;
+            font-size: 40px;
+        }
+        &__content {
+            padding: 110px 10px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+    .banner {
+        &__image {
+            margin-top: -20px;
+        }
+    }
+    .footer {
+        &__content {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+}
