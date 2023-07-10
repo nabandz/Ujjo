@@ -10,4 +10,9 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+        background-color: var(--bg-color);
+        color: var(--dark-color);
+    }
 }

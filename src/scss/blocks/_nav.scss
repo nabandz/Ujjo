@@ -5,6 +5,7 @@
         column-gap: 30px;
     }
     &__link {
+        position: relative;
         display: inline-block;
         padding: 15px 44px;
         color: var(--text-color);
@@ -13,5 +14,18 @@
         line-height: 22px;
         letter-spacing: 0.5px;
         text-transform: uppercase;
+        &:before {
+            content: '';
+            bottom: 10px;
+            left: 30px;
+            position: absolute;
+            width: 0%;
+            height: 1px;
+            background-color: var(--dark-color);
+            transition: 0.4s;
+        }
+        &:hover::before {
+            width: calc(100% - 60px);
+        }
     }
 }

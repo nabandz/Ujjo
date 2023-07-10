@@ -16,4 +16,20 @@
         letter-spacing: 0.5px;
         text-transform: uppercase;
     }
+    &__link {
+        position: relative;
+        &:before {
+            content: '';
+            bottom: -5px;
+            left: 0;
+            position: absolute;
+            width: 0%;
+            height: 1px;
+            background-color: var(--dark-color);
+            transition: 0.4s;
+        }
+        &:hover::before {
+            width: 100%;
+        }
+    }
 }
