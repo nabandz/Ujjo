@@ -1,0 +1,19 @@
+.footer {
+    margin-top: -1px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 93px;
+        background-color: var(--bg-color);
+    }
+    &__text {
+        color: var(--dark-color);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+}
