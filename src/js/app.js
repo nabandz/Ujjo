@@ -1,3 +1,5 @@
-import * as flsFunctions from "./modules/functions.js";
+import * as wepbFunctions from "./modules/webp-check.js";
+import * as burgerFunctions from "./modules/burger.js";
 
-flsFunctions.isWebp();
+wepbFunctions.isWebp();
+burgerFunctions.burger();

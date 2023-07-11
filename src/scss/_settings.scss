@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
   
 *,
@@ -50,4 +51,8 @@ a {
     &::-webkit-search-results-decoration {
         display: none;
     }
+}
+
+.stop-scroll {
+    overflow: hidden;
 }
